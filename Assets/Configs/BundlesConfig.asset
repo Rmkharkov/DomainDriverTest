@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82de6964ea5a44cd86eb6010b1226af3, type: 3}
+  m_Name: BundlesConfig
+  m_EditorClassIdentifier: 
+  bundles:
+  - Spendable:
+      rid: 3189633844268236800
+    spendValue: 70
+    Reward:
+      rid: 3189633844268236810
+    rewardValue: 50
+  - Spendable:
+      rid: 3189633844268236811
+    spendValue: 3
+    Reward:
+      rid: 3189633844268236812
+    rewardValue: 100
+  - Spendable:
+      rid: 3189633844268236813
+    spendValue: 100
+    Reward:
+      rid: 3189633844268236814
+    rewardValue: Azeroth
+  - Spendable:
+      rid: 3189633844268236815
+    spendValue: Mordor
+    Reward:
+      rid: 3189633844268236816
+    rewardValue: 50
+  references:
+    version: 2
+    RefIds:
+    - rid: 3189633844268236800
+      type: {class: GoldSpendable, ns: Script.Gold, asm: Gold}
+    - rid: 3189633844268236810
+      type: {class: HealthFixedReward, ns: Script.Health, asm: Health}
+    - rid: 3189633844268236811
+      type: {class: HealthPercentSpendable, ns: Script.Health, asm: Health}
+    - rid: 3189633844268236812
+      type: {class: GoldReward, ns: Script.Gold, asm: Gold}
+    - rid: 3189633844268236813
+      type: {class: GoldSpendable, ns: Script.Gold, asm: Gold}
+    - rid: 3189633844268236814
+      type: {class: LocationReward, ns: Script.Location, asm: Location}
+    - rid: 3189633844268236815
+      type: {class: LocationSpendable, ns: Script.Location, asm: Location}
+    - rid: 3189633844268236816
+      type: {class: HealthPercentReward, ns: Script.Health, asm: Health}
